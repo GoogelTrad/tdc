@@ -1,10 +1,6 @@
-volumes= ~/sgoinfre
-
-all: setup
+all: 
 	@docker compose -f docker/docker-compose.yml up --build
 
-setup:
-	@mkdir -p $(volumes)
 
 down:
 	@docker compose -f docker/docker-compose.yml down

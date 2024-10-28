@@ -11,7 +11,7 @@ services:
 
   django: 
     container_name: django
-    image: postgres
+    image: django
     restart: unless-stopped
     env_file: .env
     build: ../srcs/
@@ -29,7 +29,7 @@ volumes:
     driver_opts:
         type: none
         o: 'bind'
-        device: ./scrs
+        device: ../srcs/
 
 
 networks:

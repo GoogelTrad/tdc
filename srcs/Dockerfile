@@ -14,6 +14,5 @@ RUN chmod +x ./init.sh
 
 EXPOSE 8000
 
-
-ENTRYPOINT ["python", "/home/tdc/srcs/manage.py", "runserver", "0.0.0.0:8000"]
+ENTRYPOINT ["python", "/home/backend/manage.py", "runserver", "0.0.0.0:8000"]
 # ENTRYPOINT ["tail", "-f", "/dev/null"]
