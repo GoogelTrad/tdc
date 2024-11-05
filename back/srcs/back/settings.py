@@ -77,8 +77,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',  # Le moteur de base de données que vous utilisez
         'NAME': 'database',    # Nom de la base de données
-        'USER': 'youhou',                # Nom d'utilisateur de la base de données
-        'PASSWORD': 'coucou',          # Mot de passe de la base de données
+        'USER': 'db_user',                # Nom d'utilisateur de la base de données
+        'PASSWORD': 'db_mdp',         # Mot de passe de la base de données
         'HOST': 'db',                        # Hôte de la base de données (par défaut : 'localhost')
         'PORT': '5432',                                 # Port de la base de données (par défaut : '')
     }

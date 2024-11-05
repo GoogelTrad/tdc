@@ -11,6 +11,22 @@ services:
     volumes:
       - db:/home/db
 
+  react:
+    container_name: react
+    image: front
+    restart: unless-stopped
+    env_file: .env
+    build: ./front/
+    volumes:
+      - project:/home/
+    depends_on:
+      - db
+      - django
+    ports:
+      - 3000:3000
+    networks:
+      - tdc
+
   django: 
     container_name: django
     image: django
